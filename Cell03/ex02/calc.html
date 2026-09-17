@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's over 9000</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <main class="calculator">
+        <h1>Calculator</h1>
+
+        <form id="calculator-form">
+            <input
+                id="left-number"
+                type="text"
+                inputmode="numeric"
+                placeholder="Left number"
+                aria-label="Left number"
+                autocomplete="off"
+            >
+
+            <select id="operator" aria-label="Operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">×</option>
+                <option value="/">÷</option>
+                <option value="%">%</option>
+            </select>
+
+            <input
+                id="right-number"
+                type="text"
+                inputmode="numeric"
+                placeholder="Right number"
+                aria-label="Right number"
+                autocomplete="off"
+            >
+
+            <input type="submit" value="Try me!">
+        </form>
+    </main>
+
+    <script src="calc.js"></script>
+</body>
+</html>
